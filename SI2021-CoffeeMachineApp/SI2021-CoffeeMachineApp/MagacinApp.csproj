@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE07E064-2FE1-4CAD-BED8-7FF6945E27E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SI2021_CoffeeMachineApp</RootNamespace>
+    <AssemblyName>SI2021-CoffeeMachineApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PrikazEvidencije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazEvidencije.Designer.cs">
+      <DependentUpon>PrikazEvidencije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazNarudzbine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazNarudzbine.Designer.cs">
+      <DependentUpon>PrikazNarudzbine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pocetna.Designer.cs">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazDobavljaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazDobavljaca.Designer.cs">
+      <DependentUpon>PrikazDobavljaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazDopremnice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazDopremnice.Designer.cs">
+      <DependentUpon>PrikazDopremnice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazKorisnika.Designer.cs">
+      <DependentUpon>PrikazKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazProizvoda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazProizvoda.Designer.cs">
+      <DependentUpon>PrikazProizvoda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazProizvodjaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazProizvodjaca.Designer.cs">
+      <DependentUpon>PrikazProizvodjaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrikazRadnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazRadnika.Designer.cs">
+      <DependentUpon>PrikazRadnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpisDobavljaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisDobavljaca.Designer.cs">
+      <DependentUpon>UpisDobavljaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisDopremnica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisDopremnica.Designer.cs">
+      <DependentUpon>UpisDopremnica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisEvidencija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisEvidencija.Designer.cs">
+      <DependentUpon>UpisEvidencija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisKorisnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisKorisnika.Designer.cs">
+      <DependentUpon>UpisKorisnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisNarudzbina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisNarudzbina.Designer.cs">
+      <DependentUpon>UpisNarudzbina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisProizvoda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisProizvoda.Designer.cs">
+      <DependentUpon>UpisProizvoda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisProizvodjaca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisProizvodjaca.Designer.cs">
+      <DependentUpon>UpisProizvodjaca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpisRadnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpisRadnika.Designer.cs">
+      <DependentUpon>UpisRadnika.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pocetna.resx">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazDobavljaca.resx">
+      <DependentUpon>PrikazDobavljaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazDopremnice.resx">
+      <DependentUpon>PrikazDopremnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazEvidencije.resx">
+      <DependentUpon>PrikazEvidencije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazKorisnika.resx">
+      <DependentUpon>PrikazKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazNarudzbine.resx">
+      <DependentUpon>PrikazNarudzbine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazProizvoda.resx">
+      <DependentUpon>PrikazProizvoda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazProizvodjaca.resx">
+      <DependentUpon>PrikazProizvodjaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazRadnika.resx">
+      <DependentUpon>PrikazRadnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpisDobavljaca.resx">
+      <DependentUpon>UpisDobavljaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisDopremnica.resx">
+      <DependentUpon>UpisDopremnica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisEvidencija.resx">
+      <DependentUpon>UpisEvidencija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisKorisnika.resx">
+      <DependentUpon>UpisKorisnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisNarudzbina.resx">
+      <DependentUpon>UpisNarudzbina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisProizvoda.resx">
+      <DependentUpon>UpisProizvoda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisProizvodjaca.resx">
+      <DependentUpon>UpisProizvodjaca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpisRadnika.resx">
+      <DependentUpon>UpisRadnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business Layer\Business Layer.csproj">
+      <Project>{3e78095e-eda5-490c-9e8f-8d0a7fb12982}</Project>
+      <Name>Business Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data Layer\Data Layer.csproj">
+      <Project>{acfa0a3c-dec2-422f-b8c2-6006370a81e6}</Project>
+      <Name>Data Layer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
